@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/view">View all Notes</a>
+    </header>
+    <h1 id="welcome"></h1>
+    <div class="divPage">
+      <h2>Enter Your Name</h2>
+      <input
+        type="text"
+        placeholder="Please enter your name"
+        id="firstName"
+        class="inputs"
+      />
+      <input type="button" value="Submit" id="nameButton" />
+    </div>
+    <div class="divPage">
+      <h2>Add Note</h2>
+      <form action="/add" method="get">
+        <input
+          type="text"
+          placeholder="Enter the note to add.."
+          name="note"
+          class="inputs"
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="divPage">
+      <h2>Search for note</h2>
+      <form action="/search" method="get">
+        <input
+          type="text"
+          placeholder="Enter the note to search.."
+          name="search"
+          class="inputs"
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="static/script.js"></script>
+  </body>
+</html>
